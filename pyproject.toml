@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "mcmc-embed"
+version = "0.1.0"
+description = "An experiment on performing MCMC for Bayesian Inference on the embeddings of images."
+authors = ["Paul Scemama <pscemama@mitre.org>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "mcmc_embed"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyro-ppl = "^1.8.4"
+numpy = "^1.24.2"
+ipykernel = "^6.22.0"
+matplotlib = "^3.7.1"
+jaxtyping = "^0.2.14"
+beartype = "^0.13.0"
+flake8 = "^6.0.0"
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
